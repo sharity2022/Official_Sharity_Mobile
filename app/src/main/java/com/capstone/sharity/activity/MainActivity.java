@@ -55,8 +55,6 @@ public class MainActivity extends AppCompatActivity {
 
             return true;
         });
-
-        //amma motherfucking star boy
     }
 
     @Override
