@@ -8,11 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.capstone.sharity.R;
-import com.capstone.sharity.fragment.MainAccountFragment;
-import com.capstone.sharity.fragment.MainNotificationsFragment;
-import com.capstone.sharity.fragment.MainShareFragment;
-import com.capstone.sharity.fragment.MainShopFragment;
-import com.capstone.sharity.fragment.MainSupportFragment;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -37,19 +32,17 @@ public class MainActivity extends AppCompatActivity {
         //Navigation
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setSelectedItemId(R.id.shop);
-        getSupportFragmentManager().beginTransaction().replace(R.id.mainFrame, new MainShopFragment()).commit();
-
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()) {
                 case R.id.share:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.mainFrame, new MainShareFragment()).commit();
+                    //getSupportFragmentManager().beginTransaction().replace(R.id.mainFrame, new MainShareFragment()).commit();
                     break;
                 case R.id.shop:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.mainFrame, new MainShopFragment()).commit();
+                    //getSupportFragmentManager().beginTransaction().replace(R.id.mainFrame, new MainShopFragment()).commit();
                     break;
                 case R.id.support:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.mainFrame, new MainSupportFragment()).commit();
+                    //getSupportFragmentManager().beginTransaction().replace(R.id.mainFrame, new MainSupportFragment()).commit();
                     break;
             }
 
@@ -67,14 +60,13 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.nav_notifications:
-                getSupportFragmentManager().beginTransaction().replace(R.id.mainFrame, new MainNotificationsFragment()).commit();
+                //getSupportFragmentManager().beginTransaction().replace(R.id.mainFrame, new MainNotificationsFragment()).commit();
                 break;
             case R.id.nav_account:
-                getSupportFragmentManager().beginTransaction().replace(R.id.mainFrame, new MainAccountFragment()).commit();
+                //getSupportFragmentManager().beginTransaction().replace(R.id.mainFrame, new MainAccountFragment()).commit();
                 break;
         }
 
         return super.onOptionsItemSelected(item);
     }
-
 }
