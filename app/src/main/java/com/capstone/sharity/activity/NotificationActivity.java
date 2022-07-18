@@ -21,11 +21,19 @@ public class NotificationActivity extends AppCompatActivity {
         //Controller
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.main_content);
         NavController navController = navHostFragment.getNavController();
-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder().build();
 
         //Toolbar
         MaterialToolbar materialToolbar = findViewById(R.id.materialToolbar);
-        materialToolbar.inflateMenu(R.menu.main_toolbar_menu);
+        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder()
+                .setFallbackOnNavigateUpListener(new AppBarConfiguration.OnNavigateUpListener() {
+                    @Override
+                    public boolean onNavigateUp() {
+                        finish(); //finish activity
+                        NotificationActivity.this.overridePendingTransition(0,0); //No animation
+                        return true;
+                    }
+                }).build();
         NavigationUI.setupWithNavController(materialToolbar, navController, appBarConfiguration);
     }
+
 }

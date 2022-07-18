@@ -27,11 +27,6 @@ public class MainActivity extends AppCompatActivity {
         //Controller
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.main_content);
         NavController navController = navHostFragment.getNavController();
-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.mainBottomNavigationShareFragment,
-                R.id.mainBottomNavigationShopFragment,
-                R.id.mainBottomNavigationSupportFragment
-        ).build();
 
         //Toolbar
         MaterialToolbar materialToolbar = findViewById(R.id.materialToolbar);
@@ -39,21 +34,24 @@ public class MainActivity extends AppCompatActivity {
         materialToolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.mainToolbarNotificationsActivity:
-                        Intent intent = new Intent(MainActivity.this, NotificationActivity.class);
-                        startActivity(intent);
-                        Toast.makeText(getApplicationContext(),"Notifications", Toast.LENGTH_SHORT).show();
-                        //code here
 
-                    case R.id.mainToolbarAccountActivity:
-                        Toast.makeText(getApplicationContext(),"Account", Toast.LENGTH_SHORT).show();
-                        //code here
-                        break;
+                if(item.getItemId() == R.id.mainToolbarNotificationsActivity){
+                    Intent intent = new Intent(MainActivity.this, NotificationActivity.class);
+                    startActivity(intent);
+                    MainActivity.this.overridePendingTransition(0,0); //No animation
                 }
+                else if(item.getItemId() == R.id.mainToolbarAccountActivity){
+
+                }
+
                 return false;
             }
         });
+        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.mainBottomNavigationShareFragment,
+                R.id.mainBottomNavigationShopFragment,
+                R.id.mainBottomNavigationSupportFragment
+        ).build();
         NavigationUI.setupWithNavController(materialToolbar, navController, appBarConfiguration);
 
         //Bottom Navigation
