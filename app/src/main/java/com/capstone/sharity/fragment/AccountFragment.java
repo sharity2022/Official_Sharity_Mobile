@@ -9,13 +9,15 @@ import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.capstone.sharity.R;
+import com.google.android.material.navigation.NavigationView;
 
-public class AccountFragment extends Fragment {
+public class AccountFragment extends Fragment{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -28,14 +30,23 @@ public class AccountFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button button = view.findViewById(R.id.buttonProfile);
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                NavDirections action = AccountFragmentDirections.actionAccountFragmentToAccountProfileFragment();
-                Navigation.findNavController(view).navigate(action);
+        NavigationView navigationView = view.findViewById(R.id.navigationViewAccount);
+        navigationView.setNavigationItemSelectedListener(item -> {
+            switch(item.getItemId()){
+                case R.id.profile:
+                    NavDirections action = AccountFragmentDirections.actionAccountFragmentToAccountProfileFragment();
+                    Navigation.findNavController(view).navigate(action);
+                    break;
+                case R.id.contact:
+                    break;
+                case R.id.order:
+                    break;
+                case R.id.logout:
+                    break;
             }
+
+            return true;
         });
     }
+
 }

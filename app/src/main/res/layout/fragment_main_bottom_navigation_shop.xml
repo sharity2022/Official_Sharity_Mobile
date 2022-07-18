@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".fragment.MainBottomNavigationShopFragment">
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/textViewShare"
-        style="@style/TextAppearance.Material3.TitleLarge"
+        style="@style/TextAppearance.Material3.HeadlineLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Shop"
