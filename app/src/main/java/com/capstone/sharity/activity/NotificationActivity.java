@@ -25,13 +25,9 @@ public class NotificationActivity extends AppCompatActivity {
         //Toolbar
         MaterialToolbar materialToolbar = findViewById(R.id.materialToolbar);
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder()
-                .setFallbackOnNavigateUpListener(new AppBarConfiguration.OnNavigateUpListener() {
-                    @Override
-                    public boolean onNavigateUp() {
-                        finish(); //finish activity
-                        NotificationActivity.this.overridePendingTransition(0,0); //No animation
-                        return true;
-                    }
+                .setFallbackOnNavigateUpListener(() -> {
+                    finish();
+                    return true;
                 }).build();
         NavigationUI.setupWithNavController(materialToolbar, navController, appBarConfiguration);
     }

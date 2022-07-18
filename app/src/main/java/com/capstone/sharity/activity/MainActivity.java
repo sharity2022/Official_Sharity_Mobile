@@ -7,6 +7,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -31,21 +32,22 @@ public class MainActivity extends AppCompatActivity {
         //Toolbar
         MaterialToolbar materialToolbar = findViewById(R.id.materialToolbar);
         materialToolbar.inflateMenu(R.menu.main_toolbar_menu);
-        materialToolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
+        materialToolbar.setOnMenuItemClickListener(item -> {
 
-                if(item.getItemId() == R.id.mainToolbarNotificationsActivity){
-                    Intent intent = new Intent(MainActivity.this, NotificationActivity.class);
-                    startActivity(intent);
-                    MainActivity.this.overridePendingTransition(0,0); //No animation
-                }
-                else if(item.getItemId() == R.id.mainToolbarAccountActivity){
-
-                }
-
-                return false;
+            switch (item.getItemId()){
+                case R.id.mainToolbarNotificationsActivity:
+                    Intent notification = new Intent(MainActivity.this, NotificationActivity.class);
+                    startActivity(notification);
+                    break;
+                case R.id.mainToolbarAccountActivity:
+                    Intent account = new Intent(MainActivity.this, NotificationActivity.class);
+                    startActivity(account);
+                    break;
+                default:
+                    break;
             }
+
+            return true;
         });
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.mainBottomNavigationShareFragment,
