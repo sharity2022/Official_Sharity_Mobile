@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_bottom_navigation_nav"
+    app:startDestination="@id/mainBottomNavigationShareFragment">
+
+    <fragment
+        android:id="@+id/mainBottomNavigationShareFragment"
+        android:name="com.capstone.sharity.fragment.MainBottomNavigationShareFragment"
+        android:label="fragment_main_bottom_navigation_share"
+        tools:layout="@layout/fragment_main_bottom_navigation_share" />
+    <fragment
+        android:id="@+id/mainBottomNavigationShopFragment"
+        android:name="com.capstone.sharity.fragment.MainBottomNavigationShopFragment"
+        android:label="fragment_main_bottom_navigation_shop"
+        tools:layout="@layout/fragment_main_bottom_navigation_shop" />
+    <fragment
+        android:id="@+id/mainBottomNavigationSupportFragment"
+        android:name="com.capstone.sharity.fragment.MainBottomNavigationSupportFragment"
+        android:label="fragment_main_bottom_navigation_support"
+        tools:layout="@layout/fragment_main_bottom_navigation_support" />
+</navigation>

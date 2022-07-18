@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item android:title="Notifications"
-        android:id="@+id/nav_notifications"
+        android:id="@+id/mainToolbarNotificationsActivity"
         android:icon="@drawable/ic_outline_notifications"
         app:showAsAction="ifRoom"/>
     <item android:title="Account"
-        android:id="@+id/nav_account"
+        android:id="@+id/mainToolbarAccountActivity"
         android:icon="@drawable/ic_outline_account"
         app:showAsAction="ifRoom"/>
 </menu>

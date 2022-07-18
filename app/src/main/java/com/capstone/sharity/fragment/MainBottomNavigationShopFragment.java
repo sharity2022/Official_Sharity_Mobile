@@ -12,10 +12,10 @@ import com.capstone.sharity.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link MainNotificationsFragment#newInstance} factory method to
+ * Use the {@link MainBottomNavigationShopFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MainNotificationsFragment extends Fragment {
+public class MainBottomNavigationShopFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class MainNotificationsFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public MainNotificationsFragment() {
+    public MainBottomNavigationShopFragment() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class MainNotificationsFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment NotificationsFragment.
+     * @return A new instance of fragment MainBottomNavigationShopFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static MainNotificationsFragment newInstance(String param1, String param2) {
-        MainNotificationsFragment fragment = new MainNotificationsFragment();
+    public static MainBottomNavigationShopFragment newInstance(String param1, String param2) {
+        MainBottomNavigationShopFragment fragment = new MainBottomNavigationShopFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class MainNotificationsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main_notifications, container, false);
+        return inflater.inflate(R.layout.fragment_main_bottom_navigation_shop, container, false);
     }
 }
