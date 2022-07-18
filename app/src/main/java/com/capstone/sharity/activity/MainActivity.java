@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(notification);
                     break;
                 case R.id.mainToolbarAccountActivity:
-                    Intent account = new Intent(MainActivity.this, NotificationActivity.class);
+                    Intent account = new Intent(MainActivity.this, AccountActivity.class);
                     startActivity(account);
                     break;
                 default:
