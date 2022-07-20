@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/account_order_nav"
+    app:startDestination="@id/accountOrderInProgressFragment">
+
+    <fragment
+        android:id="@+id/accountOrderInProgressFragment"
+        android:name="com.capstone.sharity.fragment.AccountOrderInProgressFragment"
+        android:label="fragment_account_order_in_progress"
+        tools:layout="@layout/fragment_account_order_in_progress" />
+    <fragment
+        android:id="@+id/accountOrderHistoryFragment"
+        android:name="com.capstone.sharity.fragment.AccountOrderHistoryFragment"
+        android:label="fragment_account_order_history"
+        tools:layout="@layout/fragment_account_order_history" />
+</navigation>

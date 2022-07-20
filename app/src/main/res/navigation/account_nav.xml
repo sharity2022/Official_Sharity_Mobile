@@ -13,10 +13,50 @@
         <action
             android:id="@+id/action_accountFragment_to_accountProfileFragment"
             app:destination="@id/accountProfileFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_accountChangePasswordFragment"
+            app:destination="@id/accountChangePasswordFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_accountContactAddressFragment"
+            app:destination="@id/accountContactAddressFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_accountOrderFragment"
+            app:destination="@id/accountOrderFragment" />
     </fragment>
     <fragment
         android:id="@+id/accountProfileFragment"
         android:name="com.capstone.sharity.fragment.AccountProfileFragment"
         android:label="fragment_account_profile"
-        tools:layout="@layout/fragment_account_profile" />
+        tools:layout="@layout/fragment_account_profile" >
+        <action
+            android:id="@+id/action_accountProfileFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountChangePasswordFragment"
+        android:name="com.capstone.sharity.fragment.AccountChangePasswordFragment"
+        android:label="fragment_account_change_password"
+        tools:layout="@layout/fragment_account_change_password" >
+        <action
+            android:id="@+id/action_accountChangePasswordFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountContactAddressFragment"
+        android:name="com.capstone.sharity.fragment.AccountContactAddressFragment"
+        android:label="fragment_account_contact_address"
+        tools:layout="@layout/fragment_account_contact_address" >
+        <action
+            android:id="@+id/action_accountContactAddressFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountOrderFragment"
+        android:name="com.capstone.sharity.fragment.AccountOrderFragment"
+        android:label="fragment_account_order"
+        tools:layout="@layout/fragment_account_order" >
+        <action
+            android:id="@+id/action_accountOrderFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
 </navigation>

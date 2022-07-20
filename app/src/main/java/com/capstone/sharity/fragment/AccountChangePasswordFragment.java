@@ -15,25 +15,23 @@ import android.widget.Button;
 
 import com.capstone.sharity.R;
 
-public class AccountProfileFragment extends Fragment {
+public class AccountChangePasswordFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_account_profile, container, false);
+        return inflater.inflate(R.layout.fragment_account_change_password, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-
-
         //Navigate back to AccountFragment
         Button buttonSave = view.findViewById(R.id.buttonSave);
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavDirections action = AccountProfileFragmentDirections.actionAccountProfileFragmentToAccountFragment();
+                NavDirections action = AccountChangePasswordFragmentDirections.actionAccountChangePasswordFragmentToAccountFragment();
                 Navigation.findNavController(view).navigate(action);
             }
         });

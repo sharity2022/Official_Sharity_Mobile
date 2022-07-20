@@ -4,16 +4,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/drawable/asd.xml" value="0.3635" />
-        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/account_menu_header.xml" value="0.75" />
-        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/activity_account.xml" value="0.8810126582278481" />
-        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/activity_main.xml" value="0.67" />
+        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/account_menu_header.xml" value="0.25" />
+        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/activity_account.xml" value="0.33" />
+        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/activity_main2.xml" value="0.23471882640586797" />
         <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/activity_notification.xml" value="0.75" />
+        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/activity_share_piece.xml" value="0.18125" />
         <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/activity_test.xml" value="0.358695652173913" />
         <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/asd.xml" value="0.5" />
         <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/asdasd.xml" value="0.12083333333333333" />
-        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_account.xml" value="0.75" />
-        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_account_profile.xml" value="0.1" />
+        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_account.xml" value="0.33" />
+        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_account_change_password.xml" value="0.2975630611372381" />
+        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_account_contact_address.xml" value="0.2975630611372381" />
+        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_account_order.xml" value="0.2975630611372381" />
+        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_account_order_history.xml" value="0.33" />
+        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_account_order_in_progress.xml" value="0.2975630611372381" />
+        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_account_profile.xml" value="0.2975630611372381" />
         <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_main_account.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_main_bottom_navigation.xml" value="0.9" />
         <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_main_bottom_navigation_share.xml" value="0.9" />
@@ -24,9 +30,9 @@
         <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_main_share.xml" value="0.25" />
         <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_main_shop.xml" value="0.1480978260869565" />
         <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_main_support.xml" value="0.1480978260869565" />
-        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_notification.xml" value="0.75" />
+        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_notification.xml" value="0.25" />
         <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/layout/fragment_toolbar_notifications.xml" value="0.12083333333333333" />
-        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/menu/account_menu.xml" value="1.1" />
+        <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/menu/account_menu.xml" value="0.8798988621997471" />
         <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3625" />
         <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/menu/main_bottom_navigation_menu.xml" value="0.12083333333333333" />
         <entry key="..\:/Users/Hannah/AndroidStudioProjects/Official_Sharity_Mobile/app/src/main/res/menu/main_toolbar.xml" value="0.75" />

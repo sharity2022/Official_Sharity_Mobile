@@ -3,19 +3,23 @@
     <group
         android:id="@+id/group1">
         <item
-            android:id="@+id/profile"
+            android:id="@+id/menuProfile"
             android:icon="@drawable/ic_outline_manage_accounts"
             android:title="Profile" />
         <item
-            android:id="@+id/contact"
+            android:id="@+id/menuPassword"
+            android:icon="@drawable/ic_outline_password"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/menuContactAddress"
             android:icon="@drawable/ic_outline_contact_address"
             android:title="Contact Addresses" />
         <item
-            android:id="@+id/order"
+            android:id="@+id/menuOrder"
             android:icon="@drawable/ic_outline_orders"
             android:title="My Orders" />
         <item
-            android:id="@+id/logout"
+            android:id="@+id/menuLogout"
             android:icon="@drawable/ic_outline_logout"
             android:title="Logout" />
     </group>

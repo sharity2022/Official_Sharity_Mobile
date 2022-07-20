@@ -33,15 +33,24 @@ public class AccountFragment extends Fragment{
         NavigationView navigationView = view.findViewById(R.id.navigationViewAccount);
         navigationView.setNavigationItemSelectedListener(item -> {
             switch(item.getItemId()){
-                case R.id.profile:
-                    NavDirections action = AccountFragmentDirections.actionAccountFragmentToAccountProfileFragment();
-                    Navigation.findNavController(view).navigate(action);
+                case R.id.menuProfile:
+                    //Navigate to AccountProfileFragment
+                    NavDirections profile = AccountFragmentDirections.actionAccountFragmentToAccountProfileFragment();
+                    Navigation.findNavController(view).navigate(profile);
                     break;
-                case R.id.contact:
+                case R.id.menuPassword:
+                    NavDirections password = AccountFragmentDirections.actionAccountFragmentToAccountChangePasswordFragment();
+                    Navigation.findNavController(view).navigate(password);
                     break;
-                case R.id.order:
+                case R.id.menuContactAddress:
+                    NavDirections contactAddress = AccountFragmentDirections.actionAccountFragmentToAccountContactAddressFragment();
+                    Navigation.findNavController(view).navigate(contactAddress);
                     break;
-                case R.id.logout:
+                case R.id.menuOrder:
+                    NavDirections order = AccountFragmentDirections.actionAccountFragmentToAccountOrderFragment();
+                    Navigation.findNavController(view).navigate(order);
+                    break;
+                case R.id.menuLogout:
                     break;
             }
 
