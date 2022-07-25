@@ -22,15 +22,15 @@
 
     <ImageButton
         android:id="@+id/imageButtonAdd"
-        android:contentDescription="Add Contact Address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:minHeight="48dp"
-        android:src="@drawable/ic_outline_add"
+        android:background="@drawable/ic_outline_add"
+        android:contentDescription="Add Contact Address"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/buttonSave"
